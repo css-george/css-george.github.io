@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS George</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="george.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>CSS<span class="emoji" aria-hidden="true">🙊</span>George</h1>
+        </header>
+
+        <aside>
+            <b>Try it here!</b> 
+            Press the <kbd>~</kbd> key on your keyboard to bring up the editor.
+        </aside>
+
+        <section>
+            <h2>Less Plugin Usage</h2>
+            <p>
+                George is available as a plugin for the Less stylesheet precompiler, to expose Less variables as runtime-editable CSS variables.  It's easy to get set up and running!
+            </p>
+            <p>
+                The first step is installing the plugin from npm:
+                <br>
+                <code>npm install --save-dev less-plugin-css-george</code>
+            </p>
+            <p>
+                Now you can annotate your variable declarations in your Less source files to expose them for runtime manipulation:
+                <br>
+                <code>/* @export */ @header-bkg: #ffffff;</code>
+            </p>
+            <p>
+                To generate a CSS file with George support, just run the less compiler with the <tt>--css-george</tt> flag.
+            </p>
+        </section>
+
+        <section>
+            <h2>Browser Editor Setup</h2>
+
+            <p>TODO</p>
+        </section>
+    </body>
+</html>
