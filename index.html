@@ -12,6 +12,15 @@
             <h1>CSS<span class="emoji" aria-hidden="true">🙊</span>George</h1>
         </header>
 
+        <div class="intro">
+            <p>
+                George is an in-browser design tool for previewing and customizing web styles at runtime.
+            </p>
+            <p>
+                George is built on top of Less and turns its compile-time variables into native CSS variables that can be changed at runtime in the browser.  For editing, it provides an interface showing a list of the variables that includes textboxes and color pickers to customize their values.  The editor data is based on information about the variables that is encoded in the CSS file by the Less plugin, via inline comments similar to sourcemaps.
+            </p>
+        </div>
+
         <aside>
             <b>Try it here!</b> 
             Press <kbd>SHIFT + ~</kbd> on your keyboard to bring up the editor.
@@ -46,13 +55,15 @@
                 Installing the runtime editor is as easy as including a script tag in your HTML page! It will automatically set up the editor from annotated CSS files referenced on the page.
             </p>
             <p>
-                To download the latest version of the script file directly, you can go to the dist folder
-                <a href="https://github.com/css-george/css-george/tree/master/dist">on GitHub</a>.
-            </p>
-            <p>
-                If you're using npm, you can get the files by installing the css-george package:
+                If you're using npm, you can install the css-george package:
                 <br>
                 <code>npm install --save-dev css-george</code>
+            </p>
+            <p>
+                To download the latest version of the script file directly, you can go to the dist folder
+                <a href="https://github.com/css-george/css-george/tree/master/dist">on GitHub</a> and add it to your page:
+                <br>
+                <code>&lt;script src="george.js"&gt;&lt;/script&gt;</code>
             </p>
             <p>
                 After adding the script to your page, the keyboard shortcut shown above should open the editor in a popup window.
@@ -109,7 +120,9 @@
         </section>
 
         <footer>
-            Licensed under the MIT Licence. Copyright &copy; 2017, Darryl Pogue.
+            Licensed under the MIT Licence.
+            <wbr>
+            Copyright &copy; 2017, Darryl Pogue.
         </footer>
     </body>
 </html>

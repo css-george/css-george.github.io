@@ -26,7 +26,7 @@ h1 {
   font-feature-settings: 'unic' on, 'c2sc' on;
 }
 .emoji {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: 'Apple Color Emoji', 'Noto Color Emoji', 'NotoEmoji', 'AndroidEmoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Segoe UI', 'Symbola';
 }
 body:before {
@@ -45,7 +45,7 @@ body:after {
 }
 aside {
   background: #FFF176;
-  flex: 2 1 calc(320px - 2em);
+  flex: 1 1 calc(1000px + 2em);
   max-width: calc(1000px + 2em);
   margin: 1em 1em 0.5em;
   order: 1;
@@ -60,7 +60,7 @@ b {
 kbd {
   font-family: monospace;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 section {
   background: rgba(255, 255, 255, 0.15);
@@ -73,10 +73,22 @@ section {
   order: 3;
   box-sizing: border-box;
 }
-section.wide {
-  order: 5;
-  flex: 2 1 calc(320px - 2em);
+div.intro {
+  order: 0;
+  color: var(--section-color, #ffffff);
+  margin: 0 1em;
+  box-sizing: border-box;
+  flex: 1 1 calc(1000px + 2em);
   max-width: calc(1000px + 2em);
+}
+div.intro p:first-child {
+  text-align: center;
+  font-size: 1.25em;
+}
+section.wide {
+  flex: 1 1 calc(1000px + 2em);
+  max-width: calc(1000px + 2em);
+  order: 5;
 }
 section a {
   color: var(--section-color, #ffffff);
@@ -102,6 +114,8 @@ code {
 }
 table {
   width: 100%;
+  margin: 0 -0.5em;
+  font-size: 0.9em;
 }
 td {
   text-align: center;
@@ -119,6 +133,7 @@ footer {
   color: #ffffff;
   font-size: smaller;
   line-height: 1.5rem;
+  white-space: nowrap;
 }
 
 /*# georgeMappingURL=data:application/json;charset=utf-8;base64,eyJoZWFkZXItYmciOiIjZmZmZmZmIiwiaDEtc2l6ZSI6IjIuNWVtIiwiaDItc2l6ZSI6IjEuMzVlbSIsImJnLWdyYWQtdG9wIjoiIzAwNjk1QyIsImJnLWdyYWQtYnRtIjoiIzAwNUJBMCIsInNlY3Rpb24tY29sb3IiOiIjZmZmZmZmIn0= */
