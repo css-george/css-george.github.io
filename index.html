@@ -14,11 +14,13 @@
 
         <aside>
             <b>Try it here!</b> 
-            Press the <kbd>~</kbd> key on your keyboard to bring up the editor.
+            Press <kbd>SHIFT + ~</kbd> on your keyboard to bring up the editor.
+            <br>
+            <small>On a non-US keyboard, press <kbd>SHIFT</kbd> and the key <b>above</b> <kbd>Tab</kbd> instead of the <kbd>~</kbd> key.</small>
         </aside>
 
         <section>
-            <h2>Less Plugin Usage</h2>
+            <h2><a href="https://github.com/css-george/less-plugin-css-george" title="View on GitHub">Less Plugin</a></h2>
             <p>
                 George is available as a plugin for the Less stylesheet precompiler, to expose Less variables as runtime-editable CSS variables.  It's easy to get set up and running!
             </p>
@@ -38,9 +40,76 @@
         </section>
 
         <section>
-            <h2>Browser Editor Setup</h2>
+            <h2><a href="https://github.com/css-george/css-george" title="View on GitHub">Browser Editor</a></h2>
 
-            <p>TODO</p>
+            <p>
+                Installing the runtime editor is as easy as including a script tag in your HTML page! It will automatically set up the editor from annotated CSS files referenced on the page.
+            </p>
+            <p>
+                To download the latest version of the script file directly, you can go to the dist folder
+                <a href="https://github.com/css-george/css-george/tree/master/dist">on GitHub</a>.
+            </p>
+            <p>
+                If you're using npm, you can get the files by installing the css-george package:
+                <br>
+                <code>npm install --save-dev css-george</code>
+            </p>
+            <p>
+                After adding the script to your page, the keyboard shortcut shown above should open the editor in a popup window.
+            </p>
         </section>
+
+        <section class="wide">
+            <h2>Browser Support</h2>
+            <p>
+                George makes use of several recent additions to the browser API landscape, including CSS variables, Blob URLs, and Color Inputs.  These are not supported in many older browsers, and only partially supported in many current browsers.
+            </p>
+            <p>
+                It is important to note that George is intended as a development-time design tool, and <b><u>should not be enabled in production</u></b>.  In particular, browsers that don't support CSS variables will render with missing and broken styles, and there is no fallback behaviour.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th>Firefox</th>
+                        <th>Chrome</th>
+                        <th>Safari</th>
+                        <th>Edge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">CSS Variables</th>
+                        <td class="yes">31+</td>
+                        <td class="yes">49+</td>
+                        <td class="yes">9.1+</td>
+                        <td>None (15+)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Opening Blob URLs</th>
+                        <td class="yes">4+</td>
+                        <td class="yes">23+</td>
+                        <td class="yes">6.1+</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Color Inputs</th>
+                        <td class="yes">29+</td>
+                        <td class="yes">20+</td>
+                        <td>None (TP)</td>
+                        <td class="yes">14+</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                As such, George works best in the latest versions of Chrome, Firefox, or the Safari Tech Preview.  It works (without color pickers) in Safari 10, but does not work in MS Edge due to a restriction on opening blob URLs in a popup window.  Internet Explorer is not supported.
+            </p>
+        </section>
+
+        <footer>
+            Licensed under the MIT Licence. Copyright &copy; 2017, Darryl Pogue.
+        </footer>
     </body>
 </html>
