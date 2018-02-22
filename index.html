@@ -44,7 +44,7 @@
                 <code>/* @export */ @header-bkg: #ffffff;</code>
             </p>
             <p>
-                To generate a CSS file with George support, just run the less compiler with the <tt>--css-george</tt> flag.
+                To generate a CSS file with George support, just run the less compiler with the <tt>--css-george</tt> flag. For more options, see the <a href="https://github.com/css-george/less-plugin-css-george#usage">plugin documentation</a>.
             </p>
         </section>
 
@@ -73,10 +73,10 @@
         <section class="wide">
             <h2>Browser Support</h2>
             <p>
-                George makes use of several recent additions to the browser API landscape, including CSS variables, Blob URLs, and Color Inputs.  These are not supported in many older browsers, and only partially supported in many current browsers.
+                George makes use of several recent additions to the browser API landscape, including CSS variables, Blob URLs, and Color Inputs.  These are not supported in many older browsers, and only recently supported in many current browsers.
             </p>
             <p>
-                It is important to note that George is intended as a development-time design tool, and <b><u>should not be enabled in production</u></b>.  In particular, browsers that don't support CSS variables will render with missing and broken styles, and there is no fallback behaviour.
+                It is important to note that George is primarily intended as a development-time design tool, and is <b><u> not intended for production use</u></b>.  By default there is no fallback behaviour for older browsers without support for CSS variables, which will result in missing and broken styles.
             </p>
 
             <table>
@@ -108,21 +108,21 @@
                         <th scope="row">Color Inputs</th>
                         <td class="yes">29+</td>
                         <td class="yes">20+</td>
-                        <td>None (TP)</td>
+                        <td class="yes">11+</td>
                         <td class="yes">14+</td>
                     </tr>
                 </tbody>
             </table>
 
             <p>
-                As such, George works best in the latest versions of Chrome, Firefox, or the Safari Tech Preview.  It works (without color pickers) in Safari 10, but does not work in MS Edge due to a restriction on opening blob URLs in a popup window.  Internet Explorer is not supported.
+                As such, George works best in the latest versions of Chrome, Firefox, or Safari.  It does not work in MS Edge due to a restriction on opening blob URLs in a popup window.  Internet Explorer is not supported.
             </p>
         </section>
 
         <footer>
             Licensed under the MIT Licence.
             <wbr>
-            Copyright &copy; 2017, Darryl Pogue.
+            Copyright &copy; 2018, Darryl Pogue.
         </footer>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
